@@ -2,26 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
 
-## Development server
+## Início
+Navegue até a pasta do projeto e instale as dependências do projeto executando `npm i`.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Execute `ng serve` para iniciar o servidor. O servidor deverá iniciar em `http://localhost:4200/`.
 
-## Code scaffolding
+## CORS
+A api do Yahoo Finances apresentou problemas de cors, então para solucionar o problema acesse: https://cors-anywhere.herokuapp.com/corsdemo
+e clique no botão `Request temporary access to the demo server`. Com isso, será possível usar um proxy para evitar o cors e tudo funcionar perfeitamente.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
