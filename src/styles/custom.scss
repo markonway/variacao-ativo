@@ -1,0 +1,79 @@
+.ngx-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 0 0px 0;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 30px;
+  margin-bottom: 40px !important;
+
+  li {
+    margin: 0 10px 0 10px;
+    border-radius: 8px !important;
+  }
+
+  li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ng-star-inserted {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    min-width: 20px;
+    background-color: white;
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+  }
+
+  a:hover {
+    border-radius: 8px !important;
+  }
+
+  .ng-star-inserted:hover {
+    background-color: white !important;
+  }
+
+  li, a {
+    height: 40px !important;
+    min-width: 40px !important;
+    padding: 0 !important;
+  }
+
+  .current {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ng-star-inserted {
+      background-color: transparent;
+    }
+
+    background-color: #008a39 !important;
+
+    span:hover {
+      background-color: #008a39 !important;
+    }
+  }
+
+  .current:hover {
+    background-color: #008a39 !important;
+  }
+
+  .disabled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 0 10px !important;
+  }
+
+  .pagination-next a, .pagination-previous a  {
+    padding: 0 10px 0 10px !important;
+  }
+
+}

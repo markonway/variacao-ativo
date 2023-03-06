@@ -1,0 +1,27 @@
+
+<div class="table-container">
+  <div class="table-header">
+    <h4>{{title}}</h4>
+    <p>{{description}}</p>
+  </div>
+
+  <table class="table">
+    <tr>
+       <th *ngFor="let header of columns"> {{header}} </th>
+    </tr>
+    <tr *ngFor="let item of dataSource | paginate: { id: id, itemsPerPage: 10, currentPage: p }">
+       <td *ngFor="let data of columns"> {{item[data]}} </td>
+    </tr>
+  </table>
+
+  <p *ngIf="!showEmptyText" class="no-registers">Nenhum registro encontrado.</p>
+</div>
+
+<pagination-controls
+  [id]="id"
+  autoHide="true"
+  responsive="true"
+  previousLabel="Anterior"
+  nextLabel="Próximo"
+  (pageChange)="p = $event;">
+</pagination-controls>
